@@ -27,8 +27,9 @@ header nav .fa-bars {
 font-size: 25px;
 color: #C8E6C9;
 }
-.container-dolar {
+.container {
   background-color: #CDDC39;
+  margin-bottom: 10px;
   padding: 10px 20px;
 }
 h2 {
@@ -37,12 +38,76 @@ h2 {
   color: #fff;
   border-bottom: 1px solid #388E3C;
 }
-.container-dolar-content {
+h3 {
+  padding: 10px 0;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+h4 {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.container-table {
+  width: 100%;
+  height: auto;
+  margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-table {
+  width: 90%;
+}
+.title-table h2 {
+  border-bottom: 1px solid #CDDC39;
+}
+.table {
+  width: 90%;
+  background-color: #CDDC39;
+}
+thead {
+  background-color: #9daa23;
+  height: 30px;
+  border-bottom: 1px solid #388E3C;
+}
+th {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: inherit;
+}
+td {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.file-dark {
+  background-color: #9daa23;
+}
+
+
+
+.container-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-.dolar-content {
+.container-cripto .title-cripto {
+  margin-bottom: 0px;
+  padding: 10px;
+  background-color: #388E3C;
+  text-align: center;
+}
+.exchange-cripto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.exchange-cripto .exchange {
+  border: 1px solid #388E3C;
+}
+.content {
   background-color: #388E3C;
   padding-left: 10px;
   height: 40px;
