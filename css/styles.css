@@ -70,15 +70,16 @@ h4 {
 }
 thead {
   background-color: #9daa23;
-  height: 30px;
   border-bottom: 1px solid #388E3C;
 }
 th {
+  padding: 10px 0 10px 5px;
   font-size: 1.8rem;
   color: #fff;
   text-align: inherit;
 }
 td {
+  padding: 5px 0 5px 5px;
   font-size: 1.5rem;
   color: #fff;
 }
@@ -88,25 +89,7 @@ td {
 
 
 
-.container-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.container-cripto .title-cripto {
-  margin-bottom: 0px;
-  padding: 10px;
-  background-color: #388E3C;
-  text-align: center;
-}
-.exchange-cripto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-.exchange-cripto .exchange {
-  border: 1px solid #388E3C;
-}
+
 .content {
   background-color: #388E3C;
   padding-left: 10px;
