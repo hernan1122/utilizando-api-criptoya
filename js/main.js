@@ -73,10 +73,10 @@ async function dolarOficial() {
   const blue = document.getElementById('blue');
   const cripto = document.getElementById('cripto');
 
-  oficial.innerHTML = data.oficial;
-  solidario.innerHTML = data.solidario;
-  blue.innerHTML = data.blue;
-  cripto.innerHTML = data.ccb;
+  oficial.innerHTML = `$` + data.oficial;
+  solidario.innerHTML = `$` + data.solidario;
+  blue.innerHTML = `$` + data.blue;
+  cripto.innerHTML = `$` + data.ccb;
 }
 
 /* consultaExchange(); */
