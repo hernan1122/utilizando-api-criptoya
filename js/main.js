@@ -7,11 +7,17 @@
 
 const tableBitcoin = document.getElementById('table-bitcoin');
 const btnBitcoin = document.getElementById('btn-bitcoin');
+const tableEthereum = document.getElementById('table-ethereum');
+const btnEthereum = document.getElementById('btn-ethereum');
 
 btnBitcoin.addEventListener('click', toggleTableBitcoin);
+btnEthereum.addEventListener('click', toggleTableEthereum);
 
 function toggleTableBitcoin() {
   tableBitcoin.classList.toggle('inactive');
+}
+function toggleTableEthereum() {
+  tableEthereum.classList.toggle('inactive');
 }
 
 async function consultaCriptoBitcoin() {

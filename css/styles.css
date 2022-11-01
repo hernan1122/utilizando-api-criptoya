@@ -29,10 +29,9 @@ header nav h1 {
   font-size: 3.5rem;
   color: #388E3C;
 }
-header nav .fa-brands {
+header nav img {
+  width: 40px;
   margin-left: 10px;
-font-size: 40px;
-color: #388E3C;
 }
 /* .container {
   background-color: #CDDC39;
