@@ -5,6 +5,15 @@
   console.log(data);
 } */
 
+const tableBitcoin = document.getElementById('table-bitcoin');
+const btnBitcoin = document.getElementById('btn-bitcoin');
+
+btnBitcoin.addEventListener('click', toggleTableBitcoin);
+
+function toggleTableBitcoin() {
+  tableBitcoin.classList.toggle('inactive');
+}
+
 async function consultaCriptoBitcoin() {
   const res = await fetch('https://criptoya.com/api/btc/ars/0.1')
   const data = await res.json();
@@ -42,6 +51,8 @@ async function consultaCriptoBitcoin() {
   const letsbitCompraBi = document.getElementById('letsbit-compra-bi');
   const letsbitVentaBi = document.getElementById('letsbit-venta-bi');
 
+  let ask = document.getElementById('ask');
+
   argenCompraBi.innerHTML = `$` + data.argenbtc.totalAsk;
   argenVentaBi.innerHTML = `$` + data.argenbtc.totalBid;
   bitmoCompraBi.innerHTML = `$` + data.bitmonedero.totalAsk;
@@ -72,6 +83,9 @@ async function consultaCriptoBitcoin() {
   bitsoVentaBi.innerHTML = `$` + data.bitso.totalBid;
   letsbitCompraBi.innerHTML = `$` + data.letsbit.totalAsk;
   letsbitVentaBi.innerHTML = `$` + data.letsbit.totalBid;
+
+  //
+  //ask.innerHTML = `${new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(res.ask)}`;
 }
 
 async function consultaCriptoEthereum() {
