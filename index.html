@@ -21,10 +21,6 @@
     </nav>
   </header>
   <main>
-    <!-- <section class="container">
-      <h2>Consultas por exchange</h2>
-      <article class="container-content"></article>
-    </section> -->
     <section class="container">
       <div class="title">
         <h2>Criptomonedas</h2>
@@ -32,14 +28,14 @@
       <section class="container-btn">
         <button id="btn-bitcoin">Bitcoin <img src="./img/bitcoin.png" alt=""></button>
         <button id="btn-ethereum">Ethereum <img src="./img/ethereum.png" alt=""></button>
-        <button>Cardano <img src="./img/cardano.png" alt=""></button>
-        <button>BNB <img src="./img/bnb.png" alt=""></button>
-        <button>Solana <img src="./img/solana.png" alt=""></button>
-        <button>Polkadot <img src="./img/polkadot.png" alt=""></button>
-        <button>Litecoin <img src="./img/litecoin.png" alt=""></button>
-        <button>Avalanche <img src="./img/avalanche.png" alt=""></button>
-        <button>Fantom <img src="./img/fantom.png" alt=""></button>
-        <button>Algorand <img src="./img/algorand.png" alt=""></button>
+        <button id="btn-cardano">Cardano <img src="./img/cardano.png" alt=""></button>
+        <button id="btn-bnb">BNB <img src="./img/bnb.png" alt=""></button>
+        <button id="btn-solana">Solana <img src="./img/solana.png" alt=""></button>
+        <button id="btn-polkadot">Polkadot <img src="./img/polkadot.png" alt=""></button>
+        <button id="btn-litecoin">Litecoin <img src="./img/litecoin.png" alt=""></button>
+        <button id="btn-avalanche">Avalanche <img src="./img/avalanche.png" alt=""></button>
+        <button id="btn-fantom">Fantom <img src="./img/fantom.png" alt=""></button>
+        <button id="btn-algorand">Algorand <img src="./img/algorand.png" alt=""></button>
       </section>
       <table id="table-bitcoin" class="table inactive">
         <thead>
@@ -214,7 +210,127 @@
           </tr>
         </tbody>
       </table>
-
+      <table id="table-cardano" class="table inactive">
+        <thead>
+          <tr>
+            <th>ADA <img src="./img/cardano.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bitso</td>
+            <td id="bitso-compra-ca"></td>
+            <td id="bitso-venta-ca"></td>
+          </tr>
+          <tr>
+            <td class="file-dark">Satoshi Tango</td>
+            <td id="satoshi-compra-ca" class="file-dark"></td>
+            <td id="satoshi-venta-ca" class="file-dark"></td>
+          </tr>
+          <tr>
+            <td>Ripio</td>
+            <td id="ripio-compra-ca"></td>
+            <td id="ripio-venta-ca"></td>
+          </tr>
+          <tr>
+            <td class="file-dark">Buenbit</td>
+            <td id="buen-compra-ca" class="file-dark"></td>
+            <td id="buen-venta-ca" class="file-dark"></td>
+          </tr>
+          <tr>
+            <td>Crypto Mkt</td>
+            <td id="mkt-compra-ca"></td>
+            <td id="mkt-venta-ca"></td>
+          </tr>
+          <tr>
+            <td class="file-dark">Fiwind</td>
+            <td id="fiwind-compra-ca" class="file-dark"></td>
+            <td id="fiwind-venta-ca" class="file-dark"></td>
+          </tr>
+          <tr>
+            <td>Lemoncash</td>
+            <td id="lemon-compra-ca"></td>
+            <td id="lemon-venta-ca"></td>
+          </tr>
+          <tr>
+            <td class="file-dark">Letsbit</td>
+            <td id="letsbit-compra-ca" class="file-dark"></td>
+            <td id="letsbit-venta-ca" class="file-dark"></td>
+          </tr>
+        </tbody>
+      </table>
+      <table id="table-bnb" class="table inactive">
+        <thead>
+          <tr>
+            <th>BNB <img src="./img/bnb.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table id="table-solana" class="table inactive">
+        <thead>
+          <tr>
+            <th>SOL <img src="./img/solana.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table id="table-polkadot" class="table inactive">
+        <thead>
+          <tr>
+            <th>DOT <img src="./img/polkadot.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table id="table-litecoin" class="table inactive">
+        <thead>
+          <tr>
+            <th>LTC <img src="./img/litecoin.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table id="table-avalanche" class="table inactive">
+        <thead>
+          <tr>
+            <th>AVAX <img src="./img/avalanche.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table id="table-fantom" class="table inactive">
+        <thead>
+          <tr>
+            <th>FTM <img src="./img/fantom.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <table id="table-algorand" class="table inactive">
+        <thead>
+          <tr>
+            <th>ALGO <img src="./img/algorand.png" alt=""></th>
+            <th>Compra</th>
+            <th>Venta</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </section>
     <section class="container">
     <div class="title">
