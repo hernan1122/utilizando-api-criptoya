@@ -268,8 +268,137 @@ async function consultaCriptoSolana() {
   fiwindVentaSo.innerHTML = `$` + data.fiwind.totalBid;
 }
 
+// table polkadot
+async function consultaCriptoPolkadot() {
+  const res = await fetch('https://criptoya.com/api/dot/ars/0.1');
+  const data = await res.json();
+  console.log('polkadot');
+  console.log(data);
+
+  const bitsoCompraPo = document.getElementById('bitso-compra-po');
+  const bitsoVentaPo = document.getElementById('bitso-venta-po');
+  const satoshiCompraPo = document.getElementById('satoshi-compra-po');
+  const satoshiVentaPo = document.getElementById('satoshi-venta-po');
+  const ripioCompraPo = document.getElementById('ripio-compra-po');
+  const ripioVentaPo = document.getElementById('ripio-venta-po');
+  const buenCompraPo = document.getElementById('buen-compra-po');
+  const buenVentaPo = document.getElementById('buen-venta-po');
+  const mktCompraPo = document.getElementById('mkt-compra-po');
+  const mktVentaPo = document.getElementById('mkt-venta-po');
+  const letsbitCompraPo = document.getElementById('letsbit-compra-po');
+  const letsbitVentaPo = document.getElementById('letsbit-venta-po');
+  const fiwindCompraPo = document.getElementById('fiwind-compra-po');
+  const fiwindVentaPo = document.getElementById('fiwind-venta-po');
+  const lemonCompraPo = document.getElementById('lemon-compra-po');
+  const lemonVentaPo = document.getElementById('lemon-venta-po');
+  const ftxCompraPo = document.getElementById('ftx-compra-po');
+  const ftxVentaPo = document.getElementById('ftx-venta-po');
+
+  bitsoCompraPo.innerHTML = `$` + data.bitso.totalAsk;
+  bitsoVentaPo.innerHTML = `$` + data.bitso.totalBid;
+  satoshiCompraPo.innerHTML = `$` + data.satoshitango.totalAsk;
+  satoshiVentaPo.innerHTML = `$` + data.satoshitango.totalBid;
+  ripioCompraPo.innerHTML = `$` + data.ripio.totalAsk;
+  ripioVentaPo.innerHTML = `$` + data.ripio.totalBid;
+  buenCompraPo.innerHTML = `$` + data.buenbit.totalAsk;
+  buenVentaPo.innerHTML = `$` + data.buenbit.totalBid;
+  mktCompraPo.innerHTML = `$` + data.cryptomkt.totalAsk;
+  mktVentaPo.innerHTML = `$` + data.cryptomkt.totalBid;
+  letsbitCompraPo.innerHTML = `$` + data.letsbit.totalAsk;
+  letsbitVentaPo.innerHTML = `$` + data.letsbit.totalBid;
+  fiwindCompraPo.innerHTML = `$` + data.fiwind.totalAsk;
+  fiwindVentaPo.innerHTML = `$` + data.fiwind.totalBid;
+  lemonCompraPo.innerHTML = `$` + data.lemoncash.totalAsk;
+  lemonVentaPo.innerHTML = `$` + data.lemoncash.totalBid;
+  ftxCompraPo.innerHTML = `$` + data.ftx.totalAsk;
+  ftxVentaPo.innerHTML = `$` + data.ftx.totalBid;
+}
+
+// table litecoin
+async function consultaCriptoLitecoin() {
+  const res = await fetch('https://criptoya.com/api/ltc/ars/0.1');
+  const data = await res.json();
+   console.log('litecoin');
+  console.log(data);
+
+  const budaCompraLi = document.getElementById('buda-compra-li');
+  const budaVentaLi = document.getElementById('buda-venta-li');
+  const ftxCompraLi = document.getElementById('ftx-compra-li');
+  const ftxVentaLi = document.getElementById('ftx-venta-li');
+  const latamexCompraLi = document.getElementById('latamex-compra-li');
+  const latamexVentaLi = document.getElementById('latamex-venta-li');
+  const bitsoCompraLi = document.getElementById('bitso-compra-li');
+  const bitsoVentaLi = document.getElementById('bitso-venta-li');
+  const mktCompraLi = document.getElementById('mkt-compra-li');
+  const mktVentaLi = document.getElementById('mkt-venta-li');
+  const letsbitCompraLi = document.getElementById('letsbit-compra-li');
+  const letsbitVentaLi = document.getElementById('letsbit-venta-li');
+  const ripioCompraLi = document.getElementById('ripio-compra-li');
+  const ripioVentaLi = document.getElementById('ripio-venta-li');
+  const satoshiCompraLi = document.getElementById('satoshi-compra-li');
+  const satoshiVentaLi = document.getElementById('satoshi-venta-li');
+
+  budaCompraLi.innerHTML = `$` + data.buda.totalAsk;
+  budaVentaLi.innerHTML = `$` + data.buda.totalBid;
+  ftxCompraLi.innerHTML = `$` + data.ftx.totalAsk;
+  ftxVentaLi.innerHTML = `$` + data.ftx.totalBid;
+  latamexCompraLi.innerHTML = `$` + data.latamex.totalAsk;
+  latamexVentaLi.innerHTML = `$` + data.latamex.totalBid;
+  bitsoCompraLi.innerHTML = `$` + data.bitso.totalAsk;
+  bitsoVentaLi.innerHTML = `$` + data.bitso.totalBid;
+  mktCompraLi.innerHTML = `$` + data.cryptomkt.totalAsk;
+  mktVentaLi.innerHTML = `$` + data.cryptomkt.totalBid;
+  letsbitCompraLi.innerHTML = `$` + data.letsbit.totalAsk;
+  letsbitVentaLi.innerHTML = `$` + data.letsbit.totalBid;
+  ripioCompraLi.innerHTML = `$` + data.ripio.totalAsk;
+  ripioVentaLi.innerHTML = `$` + data.ripio.totalBid;
+  satoshiCompraLi.innerHTML = `$` + data.satoshitango.totalAsk;
+  satoshiVentaLi.innerHTML = `$` + data.satoshitango.totalBid;
+}
+
+// table avalanche
+async function consultaCriptoAvalanche() {
+  const res = await fetch('https://criptoya.com/api/avax/ars/0.1');
+  const data = await res.json();
+  console.log('avalanche');
+  console.log(data);
+
+  const letsbitCompraAv = document.getElementById('letsbit-compra-av');
+  const letsbitVentaAv = document.getElementById('letsbit-venta-av');
+  const ripioCompraAv = document.getElementById('ripio-compra-av');
+  const ripioVentaAv = document.getElementById('ripio-venta-av');
+  const lemonCompraAv = document.getElementById('lemon-compra-av');
+  const lemonVentaAv = document.getElementById('lemon-venta-av');
+  const satoshiCompraAv = document.getElementById('satoshi-compra-av');
+  const satoshiVentaAv = document.getElementById('satoshi-venta-av');
+  const ftxCompraAv = document.getElementById('ftx-compra-av');
+  const ftxVentaAv = document.getElementById('ftx-venta-av');
+  const buenCompraAv = document.getElementById('buen-compra-av');
+  const buenVentaAv = document.getElementById('buen-venta-av');
+  const mktCompraAv = document.getElementById('mkt-compra-av');
+  const mktVentaAv = document.getElementById('mkt-venta-av');
+
+  letsbitCompraAv.innerHTML = `$` + data.letsbit.totalAsk;
+  letsbitVentaAv.innerHTML = `$` + data.letsbit.totalBid;
+  ripioCompraAv.innerHTML = `$` + data.ripio.totalAsk;
+  ripioVentaAv.innerHTML = `$` + data.ripio.totalBid;
+  lemonCompraAv.innerHTML = `$` + data.lemoncash.totalAsk;
+  lemonVentaAv.innerHTML = `$` + data.lemoncash.totalBid;
+  satoshiCompraAv.innerHTML = `$` + data.satoshitango.totalAsk;
+  satoshiVentaAv.innerHTML = `$` + data.satoshitango.totalBid;
+  ftxCompraAv.innerHTML = `$` + data.ftx.totalAsk;
+  ftxVentaAv.innerHTML = `$` + data.ftx.totalBid;
+  buenCompraAv.innerHTML = `$` + data.buenbit.totalAsk;
+  buenVentaAv.innerHTML = `$` + data.buenbit.totalBid;
+  mktCompraAv.innerHTML = `$` + data.cryptomkt.totalAsk;
+  mktVentaAv.innerHTML = `$` + data.cryptomkt.totalBid;
+}
+
 consultaCriptoBitcoin();
 consultaCriptoEthereum();
 consultaCriptoCardano();
 consultaCriptoBnb();
 consultaCriptoSolana();
+consultaCriptoPolkadot();
+consultaCriptoLitecoin();
+consultaCriptoAvalanche();
