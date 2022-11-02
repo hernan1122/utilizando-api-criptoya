@@ -394,6 +394,66 @@ async function consultaCriptoAvalanche() {
   mktVentaAv.innerHTML = `$` + data.cryptomkt.totalBid;
 }
 
+// table fantom
+async function consultaCriptoFantom() {
+  const res = await fetch('https://criptoya.com/api/ftm/ars/0.1');
+  const data = await res.json();
+  console.log('fantom');
+  console.log(data);
+
+  const ripioCompraFa = document.getElementById('ripio-compra-fa');
+  const ripioVentaFa = document.getElementById('ripio-venta-fa');
+  const lemonCompraFa = document.getElementById('lemon-compra-fa');
+  const lemonVentaFa = document.getElementById('lemon-venta-fa');
+  const buenCompraFa = document.getElementById('buen-compra-fa');
+  const buenVentaFa = document.getElementById('buen-venta-fa');
+  const ftxCompraFa = document.getElementById('ftx-compra-fa');
+  const ftxVentaFa = document.getElementById('ftx-venta-fa');
+  const bitsoCompraFa = document.getElementById('bitso-compra-fa');
+  const bitsoVentaFa = document.getElementById('bitso-venta-fa');
+
+  ripioCompraFa.innerHTML = `$` + data.ripio.totalAsk;
+  ripioVentaFa.innerHTML = `$` + data.ripio.totalBid;
+  lemonCompraFa.innerHTML = `$` + data.lemoncash.totalAsk;
+  lemonVentaFa.innerHTML = `$` + data.lemoncash.totalBid;
+  buenCompraFa.innerHTML = `$` + data.buenbit.totalAsk;
+  buenVentaFa.innerHTML = `$` + data.buenbit.totalBid;
+  ftxCompraFa.innerHTML = `$` + data.ftx.totalAsk;
+  ftxVentaFa.innerHTML = `$` + data.ftx.totalBid;
+  bitsoCompraFa.innerHTML = `$` + data.bitso.totalAsk;
+  bitsoVentaFa.innerHTML = `$` + data.bitso.totalBid;
+}
+
+// table algoreand
+async function consultaCriptoAlgoran() {
+  const res = await fetch('https://criptoya.com/api/algo/ars/0.1');
+  const data = await res.json();
+  console.log('algorand');
+  console.log(data);
+
+  const bitsoCompraAl = document.getElementById('bitso-compra-al');
+  const bitsoVentaAl = document.getElementById('bitso-venta-al');
+  const mktCompraAl = document.getElementById('mkt-compra-al');
+  const mktVentaAl = document.getElementById('mkt-venta-al');
+  const ftxCompraAl = document.getElementById('ftx-compra-al');
+  const ftxVentaAl = document.getElementById('ftx-venta-al');
+  const lemonCompraAl = document.getElementById('lemon-compra-al');
+  const lemonVentaAl = document.getElementById('lemon-venta-al');
+  const ripioCompraAl = document.getElementById('ripio-compra-al');
+  const ripioVentaAl = document.getElementById('ripio-venta-al');
+
+  bitsoCompraAl.innerHTML = `$` + data.bitso.totalAsk;
+  bitsoVentaAl.innerHTML = `$` + data.bitso.totalBid;
+  mktCompraAl.innerHTML = `$` + data.cryptomkt.totalAsk;
+  mktVentaAl.innerHTML = `$` + data.cryptomkt.totalBid;
+  ftxCompraAl.innerHTML = `$` + data.ftx.totalAsk;
+  ftxVentaAl.innerHTML = `$` + data.ftx.totalBid;
+  lemonCompraAl.innerHTML = `$` + data.lemoncash.totalAsk;
+  lemonVentaAl.innerHTML = `$` + data.lemoncash.totalBid;
+  ripioCompraAl.innerHTML = `$` + data.ripio.totalAsk;
+  ripioVentaAl.innerHTML = `$` + data.ripio.totalBid;
+}
+
 consultaCriptoBitcoin();
 consultaCriptoEthereum();
 consultaCriptoCardano();
@@ -402,3 +462,5 @@ consultaCriptoSolana();
 consultaCriptoPolkadot();
 consultaCriptoLitecoin();
 consultaCriptoAvalanche();
+consultaCriptoFantom();
+consultaCriptoAlgoran()
