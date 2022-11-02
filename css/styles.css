@@ -8,14 +8,15 @@ html {
 }
 body {
   margin-bottom: 40px;
-  background-color: #388E3C;
+  background-color: #1f4721;
   font-family: 'Ubuntu', sans-serif;
 }
 .inactive {
   display: none;
 }
 header nav {
-  background-color: #CDDC39;
+  /* background-color: #CDDC39; */
+  background-color: #89970c;
   margin-bottom: 40px;
   padding: 0 20px;
   width: 100%;
@@ -99,10 +100,10 @@ p {
 .table {
   width: 90%;
   margin-bottom: 30px;
-  background-color: #CDDC39;
+  background-color: #89970c;
 }
 thead {
-  background-color: #9daa23;
+  background-color: #5a630d;
   border-bottom: 1px solid #388E3C;
 }
 table thead th img{
@@ -120,10 +121,10 @@ td {
   color: #fff;
 }
 .file-dark {
-  background-color: #9daa23;
+  background-color: #5a630d;
 }
 .content {
-  background-color: #9daa23;
+  background-color: #5a630d;
   padding: 0 10px;
   width: 90%;
   font-size: 1.4rem;
