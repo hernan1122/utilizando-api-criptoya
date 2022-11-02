@@ -15,7 +15,6 @@ body {
   display: none;
 }
 header nav {
-  /* background-color: #CDDC39; */
   background-color: #89970c;
   margin-bottom: 40px;
   padding: 0 20px;
@@ -28,22 +27,17 @@ header nav {
 }
 header nav h1 {
   font-size: 3.5rem;
-  color: #388E3C;
+  color: #1f4721;
 }
 header nav img {
-  width: 40px;
+  width: 50px;
   margin-left: 10px;
 }
-/* .container {
-  background-color: #CDDC39;
-  margin-bottom: 10px;
-  padding: 10px 20px;
-} */
 h2 {
   margin-bottom: 10px;
   font-size: 2rem;
   color: #fff;
-  border-bottom: 1px solid #CDDC39;
+  border-bottom: 1px solid #89970c;
 }
 h3 {
   padding: 10px 0;
@@ -68,7 +62,8 @@ p {
   justify-content: center;
   align-items: center;
 }
-.container-btn {
+.container-btn,
+.container-dolar {
   width: 90%;
   margin-bottom: 30px;
   display: grid;
@@ -84,12 +79,13 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #CDDC39;
+  border: 1px solid #89970c;
+  border-radius: 0 10px 0 10px;
   cursor: pointer;
   transition: 300ms;
 }
 .container-btn button:hover {
-  background-color: #9daa23d8;
+  background-color: #5a630d;
 }
 .container-btn button img {
   width: 30px;
@@ -100,11 +96,11 @@ p {
 .table {
   width: 90%;
   margin-bottom: 30px;
-  background-color: #89970c;
+  background-color: #1f4721;
 }
 thead {
   background-color: #5a630d;
-  border-bottom: 1px solid #388E3C;
+  border-radius: 0 10px 0 0;
 }
 table thead th img{
   width: 20px;
@@ -120,23 +116,21 @@ td {
   font-size: 1.5rem;
   color: #fff;
 }
+.file-light {
+  background-color: #89970c;
+}
 .file-dark {
   background-color: #5a630d;
 }
 .content {
-  background-color: #5a630d;
-  padding: 0 10px;
-  width: 90%;
-  font-size: 1.4rem;
-  color: #fff;
+  padding: 7px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #CDDC39;
+  border: 1px solid #89970c;
+  border-radius: 0 10px 0 10px;
+  transition: 300ms;
 }
-.fa-bitcoin {
-  color: #f6993f;
-}
-.fa-ethereum {
-   color: #343a40;
+.content:hover {
+  background-color: #5a630d;
 }
