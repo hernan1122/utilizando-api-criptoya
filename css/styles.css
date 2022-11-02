@@ -96,7 +96,7 @@ p {
 .table {
   width: 90%;
   margin-bottom: 30px;
-  background-color: #1f4721;
+  border-collapse: collapse;
 }
 thead {
   background-color: #5a630d;
