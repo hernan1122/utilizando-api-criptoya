@@ -40,7 +40,8 @@ header section img {
 header section h1 {
   font-size: 4rem;
   color: #1f4721;
-}header figure {
+}
+header figure {
   position: absolute;
   left: calc(50% - 40px);
   top: 230px;
@@ -105,6 +106,18 @@ p {
 }
 .container-btn button img {
   width: 30px;
+  animation: shake 2s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: scale(120%);
+  }
+  50% {
+    transform: scale(90%);
+  }
+  100% {
+    transform: scale(120%);
+  }
 }
 .title {
   width: 90%;
@@ -149,4 +162,31 @@ td {
 }
 .content:hover {
   background-color: #5a630d;
+}
+
+@media (min-width: 768px) {
+  header section {
+    height: 50vh;
+  }
+  header section h1 {
+    font-size: 5rem;
+  }
+  header section img {
+  width: 60px;
+  margin-right: 10px;
+  }
+  header figure img {
+  width: 100px;
+  }
+  header figure {
+  left: calc(50% - 50px);
+  top: 250px;
+  }
+  h2,
+  .title,
+  .table,
+  .container-dolar,
+  .container-btn {
+    max-width: 768px;
+  }
 }
