@@ -17,13 +17,13 @@ body {
 header section {
   background: linear-gradient(to top, #1f4721, #89970c);
   margin-bottom: 70px;
-  padding: 0 15px;
+  padding: 65px 15px;
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   font-size: 2.4rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 header section .container-title {
@@ -44,7 +44,7 @@ header section h1 {
 header figure {
   position: absolute;
   left: calc(50% - 40px);
-  top: 230px;
+  top: 260px;
 }
 header figure img {
   width: 80px;
