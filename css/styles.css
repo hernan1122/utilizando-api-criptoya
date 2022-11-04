@@ -80,7 +80,8 @@ p {
   align-items: center;
 }
 .container-btn,
-.container-dolar {
+.container-dolar,
+.container-bank {
   width: 90%;
   margin-bottom: 30px;
   display: grid;
@@ -101,9 +102,7 @@ p {
   cursor: pointer;
   transition: 300ms;
 }
-.container-btn button:hover,
-.content:hover,
-.content-bank:hover {
+.container-btn button:hover {
   background-color: #5a630d;
 }
 .container-btn button img {
@@ -154,6 +153,7 @@ td {
   background-color: #5a630d;
 }
 .content {
+  background-color: #5a630d;
   padding: 7px 15px;
   display: flex;
   justify-content: space-between;
@@ -163,6 +163,7 @@ td {
   transition: 300ms;
 }
 .content-bank {
+  background-color: #5a630d;
   padding: 7px 15px;
   display: flex;
   flex-direction: column;
@@ -246,6 +247,7 @@ footer .content-text h4 {
   .table,
   .container-dolar,
   .container-btn,
+  .container-bank,
   footer .content-text {
     max-width: 768px;
   }
