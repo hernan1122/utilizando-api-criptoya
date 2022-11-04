@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   background-color: #1f4721;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -164,6 +164,45 @@ td {
   background-color: #5a630d;
 }
 
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .content-text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #89970c;
+}
+footer .content-text .title-footer {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .content-text .c {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+footer .content-text h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+
 @media (min-width: 768px) {
   header section {
     height: 50vh;
@@ -186,7 +225,8 @@ td {
   .title,
   .table,
   .container-dolar,
-  .container-btn {
+  .container-btn,
+  footer .content-text {
     max-width: 768px;
   }
 }
