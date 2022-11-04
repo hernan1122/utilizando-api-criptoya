@@ -15,7 +15,7 @@ async function dolar() {
   cripto.innerHTML = `$` + data.ccb;
 }
 
-async function dolarBancoNacion() {
+async function dolarBankNacion() {
   const res = await fetch(' https://criptoya.com/api/bna');
   const data = await res.json();
   console.log('banco nacion');
@@ -28,7 +28,7 @@ async function dolarBancoNacion() {
   ventaNacion.innerHTML = `$` + data.totalBid;
 }
 
-async function dolarBancoGalicia() {
+async function dolarBankGalicia() {
   const res = await fetch(' https://criptoya.com/api/galicia');
   const data = await res.json();
   console.log('banco galicia');
@@ -41,7 +41,7 @@ async function dolarBancoGalicia() {
   ventaGalicia.innerHTML = `$` + data.totalBid;
 }
 
-async function dolarBancoBbva() {
+async function dolarBankBbva() {
   const res = await fetch(' https://criptoya.com/api/bbva');
   const data = await res.json();
   console.log('banco bbva');
@@ -54,7 +54,7 @@ async function dolarBancoBbva() {
   ventaBbva.innerHTML = `$` + data.totalBid;
 }
 
-async function dolarBancoMacro() {
+async function dolarBankMacro() {
   const res = await fetch(' https://criptoya.com/api/macro');
   const data = await res.json();
   console.log('banco macro');
@@ -67,7 +67,7 @@ async function dolarBancoMacro() {
   ventaMacro.innerHTML = `$` + data.totalBid;
 }
 
-async function dolarBancoSupervielle() {
+async function dolarBankSupervielle() {
   const res = await fetch(' https://criptoya.com/api/supervielle');
   const data = await res.json();
   console.log('banco supervielle');
@@ -78,6 +78,19 @@ async function dolarBancoSupervielle() {
 
   compraSupervielle.innerHTML = `$` + data.totalAsk;
   ventaSupervielle.innerHTML = `$` + data.totalBid;
+}
+
+async function dolarBankSantander() {
+  const res = await fetch(' https://criptoya.com/api/santander');
+  const data = await res.json();
+  console.log('santander');
+  console.log(data);
+
+  const compraSantander = document.getElementById('compra-santander');
+  const ventaSantander = document.getElementById('venta-santander');
+
+  compraSantander.innerHTML = `$` + data.totalAsk;
+  ventaSantander.innerHTML = `$` + data.totalBid;
 }
 
 async function dolarBrubank() {
@@ -106,25 +119,12 @@ async function dolarNaranjaX() {
   ventaNaranja.innerHTML = `$` + data.totalBid;
 }
 
-async function dolarBuendolar() {
-  const res = await fetch(' https://criptoya.com/api/buendolar');
-  const data = await res.json();
-  console.log('buendolar');
-  console.log(data);
-
-  const compraBuendolar = document.getElementById('compra-buendolar');
-  const ventaBuendolar = document.getElementById('venta-buendolar');
-
-  compraBuendolar.innerHTML = `$` + data.totalAsk;
-  ventaBuendolar.innerHTML = `$` + data.totalBid;
-}
-
 dolar();
-dolarBancoNacion();
-dolarBancoGalicia();
-dolarBancoBbva();
-dolarBancoMacro();
-dolarBancoSupervielle();
+dolarBankNacion();
+dolarBankGalicia();
+dolarBankBbva();
+dolarBankMacro();
+dolarBankSupervielle();
+dolarBankSantander();
 dolarBrubank();
 dolarNaranjaX();
-dolarBuendolar();
