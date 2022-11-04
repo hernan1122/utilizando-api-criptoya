@@ -101,7 +101,9 @@ p {
   cursor: pointer;
   transition: 300ms;
 }
-.container-btn button:hover {
+.container-btn button:hover,
+.content:hover,
+.content-bank:hover {
   background-color: #5a630d;
 }
 .container-btn button img {
@@ -160,8 +162,26 @@ td {
   border-radius: 0 10px 0 10px;
   transition: 300ms;
 }
-.content:hover {
-  background-color: #5a630d;
+.content-bank {
+  padding: 7px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #89970c;
+  border-radius: 0 10px 0 10px;
+  transition: 300ms;
+}
+.content-bank h3 {
+  width: 100%;
+  border-bottom: 1px solid #89970c;
+}
+.content-bank .info-bank-1,
+.content-bank .info-bank-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {
