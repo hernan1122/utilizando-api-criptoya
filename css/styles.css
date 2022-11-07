@@ -44,7 +44,7 @@ header section h1 {
 header figure {
   position: absolute;
   left: calc(50% - 40px);
-  top: 260px;
+  top: 42vh;
 }
 header figure img {
   width: 80px;
