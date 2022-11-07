@@ -71,6 +71,12 @@ p {
   font-size: 1.5rem;
   color: #fff;
 }
+.left {
+  border-radius: 0 15px 0 15px;
+}
+.right {
+  border-radius: 15px 0 15px 0;
+}
 .container {
   width: 100%;
   height: auto;
@@ -98,7 +104,6 @@ p {
   justify-content: space-between;
   align-items: center;
   border: 1px solid #89970c;
-  border-radius: 0 10px 0 10px;
   cursor: pointer;
   transition: 300ms;
 }
@@ -159,7 +164,6 @@ td {
   justify-content: space-between;
   align-items: center;
   border: 1px solid #89970c;
-  border-radius: 0 10px 0 10px;
   transition: 300ms;
 }
 .content-bank {
@@ -170,7 +174,6 @@ td {
   justify-content: space-between;
   align-items: flex-start;
   border: 1px solid #89970c;
-  border-radius: 0 10px 0 10px;
   transition: 300ms;
 }
 .content-bank h3 {
