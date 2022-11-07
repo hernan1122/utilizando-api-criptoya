@@ -44,7 +44,7 @@ header section h1 {
 header figure {
   position: absolute;
   left: calc(50% - 40px);
-  top: 42vh;
+  top: 42.5vh;
 }
 header figure img {
   width: 80px;
@@ -127,23 +127,6 @@ p {
 }
 .title {
   width: 90%;
-}
-.title-crypto {
-  width: 90%;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-bottom: 1px solid #89970c;
-}
-.title-crypto h2 {
-  margin-bottom: 0;
-  border-bottom: none;
-}
-.title-crypto .flag img {
-  width: 45px;
-  margin-left: 10px;
-  cursor: pointer;
 }
 .table {
   width: 90%;
@@ -264,7 +247,6 @@ footer .content-text h4 {
   }
   h2,
   .title,
-  .title-crypto,
   .table,
   .container-dolar,
   .container-btn,

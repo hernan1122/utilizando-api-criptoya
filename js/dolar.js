@@ -119,13 +119,6 @@ async function dolarNaranjaX() {
   ventaNaranja.innerHTML = `$` + data.totalBid;
 }
 
-
-const arg = document.getElementById('btn-arg').addEventListener('click', consultaCriptoBitcoin);
-const usa = document.getElementById('btn-usa').addEventListener('click', () => {
-  console.log('hola usa');
-});
-
-
 dolar();
 dolarBankNacion();
 dolarBankGalicia();
