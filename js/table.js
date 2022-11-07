@@ -95,7 +95,6 @@ async function consultaCriptoBitcoin() {
   tiendaCompraBi.innerHTML = `$` + data.tiendacrypto.totalAsk;
   tiendaVentaBi.innerHTML = `$` + data.tiendacrypto.totalBid;
 }
-
 // table ethereum
 async function consultaCriptoEthereum() {
   const res = await fetch('https://criptoya.com/api/eth/ars/0.1');
