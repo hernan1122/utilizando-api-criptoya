@@ -128,6 +128,23 @@ p {
 .title {
   width: 90%;
 }
+.title-crypto {
+  width: 90%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #89970c;
+}
+.title-crypto h2 {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.title-crypto .flag img {
+  width: 45px;
+  margin-left: 10px;
+  cursor: pointer;
+}
 .table {
   width: 90%;
   margin-bottom: 30px;
@@ -247,6 +264,7 @@ footer .content-text h4 {
   }
   h2,
   .title,
+  .title-crypto,
   .table,
   .container-dolar,
   .container-btn,
